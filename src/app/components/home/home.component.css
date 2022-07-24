@@ -1,0 +1,13 @@
+.contenedor-inicio{
+    margin-top: 4rem;
+}
+.contenedor-tarjeta{
+    margin-top: 2rem;
+}
+.imagen-perfil{
+    width: 8rem;
+    border-radius: 100px;
+}
+.tarjeta{
+    padding: 15px;
+}

@@ -1,0 +1,25 @@
+<app-header></app-header>
+    <div class="container contenedor-inicio">
+        <h1 class="text">Usuario</h1>
+        <br>
+        <button class="btn btn-primary" (click)="tomarDatos()">Generar usuario</button>
+        <div class="container">
+            <div *ngFor="let item of usuarios">
+                <div class="row contenedor-tarjeta">
+                    <div class="card mb-3 tarjeta" id="id_{{item.id}}">
+                        <img src="{{item.imagen}}" class="card-img-top imagen-perfil" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{item.nombre}}</h5>
+                            <li class="list-group-item">Correo: {{item.correo}}</li>
+                            <li class="list-group-item">Edad: {{item.edad}}</li>
+                            <li class="list-group-item">Ciudad: {{item.ciudad}}</li>
+                            <li class="list-group-item">Usuario: {{item.usuario}}</li>
+                            <li class="list-group-item">Celular: {{item.celular}}</li>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+<app-footer></app-footer>
